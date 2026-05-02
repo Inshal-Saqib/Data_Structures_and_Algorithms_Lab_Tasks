@@ -1,0 +1,24 @@
+1) Lists using Arrays
+
+    | | | | | | | | | |
+     ^
+     |
+    Data Struct (Object)   
+
+Fast Data Retrival but slower Deletion
+
+2) linked lists
+
+    | | | --> | | | 
+                 |
+                 |
+                | | | --> | | |
+
+Fast Data Delection but slower Retrival
+
+
+Selection \ Choice BAsed on 
+--> speed Data Retrival
+
+--> Data Deletion   
+

@@ -1,0 +1,15 @@
+Stack Application : 
+    - Browser Next button
+    - stack memory in Programming
+
+Analogy :
+    - Pile of plates / stack of books
+        - To remove each ,we start from the very top - otherwise the stack may topple over
+
+
+pop() : To remiove the top emement
+
+push() : To add an element at the top
+
+stack using linked list never causes stack overflow
+

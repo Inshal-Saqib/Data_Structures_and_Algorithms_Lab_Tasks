@@ -1,0 +1,13 @@
+Sorting Algorithms
+
+1) Basic:
+    Bubble Sort
+    Insertion Sort
+    Selection Sort
+
+2)Advance:
+    Merge Sort
+    Quick Sort
+
+Bubble Sort:
+    pair indices are chosen and check whether 

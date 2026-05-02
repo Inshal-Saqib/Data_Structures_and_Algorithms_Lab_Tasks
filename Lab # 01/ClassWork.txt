@@ -1,0 +1,20 @@
+Arrays :
+    Array Declaration :-
+    int arr[3] = {3 , 4 5}; ---- Actual Declaration
+    Data-Type Array-Name[size of array] = {Array-Elements}
+
+    Array Declaration at heap using pointers:-
+    int *arr = new int[3]{3 , 4 ,5};
+
+    Data-Type-of-Pointer *Array-Name = new Array-Data-Type[Array-Size]{Array-Elements}
+
+    Array pointer eqilency -- Decay Rule
+    cout << arr[i];
+
+    To free up memory in the RAM -- as if not done so, the Memory remain occupied forever even if you close the program -- it only cleares with the COMPUTER is turnes off and the RAM flushes it self
+    delete[]arr;
+
+    To prevent Dangling pointers -- by pointing the pointer to a "no point" Memory Address so that it does not randomly point to any other usefull memory address
+    arr = nullptr;
+
+Structures:
