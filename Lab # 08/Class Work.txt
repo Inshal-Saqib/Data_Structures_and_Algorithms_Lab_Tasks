@@ -1,0 +1,25 @@
+                QUEUES - Always used with Linked Lists
+
+FIFO -> People at the first position in the LIne Gets the first turn 
+
+4 commons 
+
+1)  enqueue - Inserrt
+2)  dequeue - Delect emelemt
+3)  rear elemment - WHat elemnet is at the back
+4)  fron element - what element is at the Fornt
+
+
+enqueue - element is always inserted at the Rear - so the rear element increments
+
+    Preset definitions of Variables 
+            int front = 0;
+            int rear = -1;
+
+
+            1 MB Stack is because of cache becasue its size is 1 MB
+
+Array Quese can only be used once as the front increments, and the elements are not deleted so the array / queue becomes unusable after one full pass od queue
+So normaly linked list queues are used
+to over come this we may use circular arrays
+
