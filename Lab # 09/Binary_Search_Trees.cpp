@@ -150,8 +150,48 @@ void preorder(Node* root) {
     preorder(root->right); // Finally, traverse the right subtree
 }
 
-int main(){  
+int main(){   
+
+Node* root = nullptr;
+    // Insert values into the BST
+    root = insert(root, 50);
+    insert(root, 30);
+    insert(root, 20);
+    insert(root, 40);
+    insert(root, 70);
+    insert(root, 60);
+    insert(root, 80);
+    insert(root, 90);
+    insert(root, 10);
+    insert(root, 50);
+
+    cout << "Inorder traversal: ";
+    inorder(root);
+    cout << endl;
+
+    cout << "Preorder traversal: ";
+    preorder(root);
+    cout << endl;
+
+    cout << "Postorder traversal: ";
+    postorder(root);
+    cout << endl;
+
+    // Delete nodes
+    root = deleteNode(root, 20);
+    root = deleteNode(root, 30);
+
+    cout << "Inorder traversal after 2 deletion: ";
+    inorder(root);
+    cout << endl;
+
+    root = deleteNode(root, 90);
+    root = deleteNode(root, 50);
+
+     cout << "Preorder traversal after 4 deletion: ";
+    preorder(root);
+    cout << endl;
     
-    
+    return 0;
 
 }
