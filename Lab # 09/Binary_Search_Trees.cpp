@@ -150,6 +150,17 @@ void preorder(Node* root) {
     preorder(root->right); // Finally, traverse the right subtree
 }
 
+//Return Height of BST
+
+int TreeHeight(Node* root) {
+    if (root == nullptr) {
+        return -1; // Return -1 for null nodes to count edges
+    }
+    int leftHeight = TreeHeight(root->left); // Get the height of the left subtree
+    int rightHeight = TreeHeight(root->right); // Get the height of the right subtree
+    return max(leftHeight, rightHeight) + 1; // Return the maximum height plus one for the current node
+}
+
 int main(){   
 
 Node* root = nullptr;
@@ -164,6 +175,7 @@ Node* root = nullptr;
     insert(root, 90);
     insert(root, 10);
     insert(root, 50);
+    cout << "Height of the BST: " << TreeHeight(root) << endl;
 
     cout << "Inorder traversal: ";
     inorder(root);
@@ -180,6 +192,7 @@ Node* root = nullptr;
     // Delete nodes
     root = deleteNode(root, 20);
     root = deleteNode(root, 30);
+    cout << "Height of the BST after Deletion of 2 elements: " << TreeHeight(root) << endl;
 
     cout << "Inorder traversal after 2 deletion: ";
     inorder(root);
@@ -187,7 +200,7 @@ Node* root = nullptr;
 
     root = deleteNode(root, 90);
     root = deleteNode(root, 50);
-
+    cout << "Height of the BST after Deletion of 4 elements: " << TreeHeight(root) << endl;
      cout << "Preorder traversal after 4 deletion: ";
     preorder(root);
     cout << endl;
